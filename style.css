@@ -1,0 +1,210 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+/*Estilos para el header*/
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw; /*vw = viewport widht*/
+    height: 80px;
+    font-size: 16px;
+    padding: 0px 16px;
+    position: fixed;
+    z-index: 1;
+}
+
+header nav img#pinterest-icon{
+    width: 35px;
+    height: 32px;
+    padding: 4px;
+}
+
+header nav img#pinterest-icon:hover{
+    background-color: #E9E9E9;
+    border-radius: 150px;
+}
+
+.first{
+    display: flex;
+}
+
+.first a{
+    text-decoration: none;
+    color: #111111;
+}
+
+.first li{
+    list-style: none;
+    padding: 0px 12px;
+}
+
+.first li #inicio{
+    background-color: #111111;
+    color: white;
+    border-radius: 25px;
+    padding: 14px 12px;
+}
+
+.menu {
+    display: none;
+}
+
+.crear {
+    display: flex;
+}
+
+.search{
+    flex-grow: 1;
+    height: 48px;
+    background-color: #e9e9e9;
+    border-radius: 30px;
+}
+
+.search:hover{
+    background-color: #e1e1e1;
+}
+
+.search:focus-within{
+    border: 4px solid #7fc1ff;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+
+#lupa {
+    padding: 10px;
+    color: #767676;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.barra input{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    padding: 0px 8px 0px 0px;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.right-items span{
+    padding: 8px;
+    color: #767676;
+    font-size: 28px;
+}
+
+.right-items span:hover{
+    background-color: #e9e9e9;
+    border-radius: 150px;
+}
+
+/*Estilos para las Cards*/
+
+.contenido {
+    position: absolute;
+    margin-top: 80px;
+    padding-right: 5px;
+}
+
+.imagenes{
+    columns: 5 240px;
+    margin: auto;
+}
+
+.imagenes .card-image{
+    position: relative;
+    padding: 6px;
+}
+
+
+.imagenes .card-image img{
+    border-radius: 8%;
+    min-width: 240px;
+    max-width: 240px;
+}
+
+.card-image:hover > :first-child{
+    filter: brightness(60%);
+}
+
+.card-image:hover > * {
+    visibility: visible;
+    display: inline;
+}
+
+.button{
+    position: absolute;
+    left: 60%;
+    top: 5%;
+    background-color: #e60023;
+    padding: 13px 15px;
+    border-radius: 30px;
+    border: none;
+    visibility: hidden;
+    display: none;
+}
+
+.imagenes .card-image button a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.oculto-1 {
+    position: absolute;
+    left: 60%;
+    bottom: 8%;
+    background-color: #f0f0f0;
+    font-size: 30px;
+    border-radius: 50px;
+    color: #111111;
+    font-weight: bolder;
+    padding: 4px;
+    visibility: hidden;
+    display: none;
+}
+
+.oculto-2 {
+    position: absolute;
+    left: 78%;
+    bottom: 8%;
+    background-color: #f0f0f0;
+    font-size: 30px;
+    border-radius: 50px;
+    color: #111111;
+    font-weight: bolder;
+    padding: 4px;
+    visibility: hidden;
+    display: none;
+}
+
+#question{
+    position: fixed;
+    background-color: #f0f0f0;
+    color: #111111;
+    top: 88%;
+    left: 94%;
+    padding: 14px;
+    font-weight: bolder;
+    border-radius: 40px;
+    }
+
+
+
+
